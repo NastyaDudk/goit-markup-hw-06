@@ -1036,27 +1036,57 @@ label{
   fill: #4D5AE5;
 }
   
-@media screen and (max-width:380) {
+@media screen and (max-width:320) {
 
     .header-container{
         width: 100%;
     }
-    
-}
-
-@media screen and (max-width:380) {
 
     .hero-section{
       background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
-      url(../images/peopleoffice.jpg);
-      max-width: 960px;
-      min-width: 380px;
-      margin: 0 auto;
-    }
+       rgba(46, 47, 66, 0.7)),
+       url(../images/dark-bg1.png); 
+     width: 320px;
+     height: 432px;
+     top: 56px;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     margin: auto;
+   }
+
+   img{
+    display: block;
+    width: 100%;
+   }
     
-    img{
-      display: block;
-      max-width: 100%;
+}
+
+@media screen and (max-width:768) {
+
+  .header-container{
+    width: 100%;
     }
+
+.menu-nav{
+flex-direction:column;
+
+}
+
+    .add-contacts{
+      line-height: 1.5;
+      list-style-type: none;
+      letter-spacing: 0.02em;
+       color:#2E2F42;
+       display: flex;
+       gap: 24px;
+       flex-direction:column;
+
+}
+
+@media screen and (max-width:1158px){
+  .header-container{
+    width: 100%;
+    }
+}
 }
