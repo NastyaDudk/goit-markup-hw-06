@@ -1044,6 +1044,14 @@ label{
 @media (max-width: 1158px){
 
 
+  .container{
+    max-width: 1158;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+  }
+
+
   .add-contacts{
     display: flex;
     flex-wrap: wrap;
@@ -1109,11 +1117,6 @@ label{
   width:calc((100% - 48px) / 2 );
 }
 
-.footer-change{
-  display: flex;
-  flex-wrap: wrap;
- 
-}
 
 }
 
@@ -1122,8 +1125,7 @@ label{
 
 
 .container{
-  width: 100%;
-  padding: 0 15px 0 15px;
+ max-width: 768px;
   
 }
 
@@ -1143,8 +1145,10 @@ label{
 
 
 .hero-title{
+display: flex;
+text-align: center;
+flex-wrap: wrap;
 
-  text-align: center;
 }
 
 
@@ -1159,11 +1163,32 @@ label{
 }
 
 
+@media (max-width: 320px){
+.container{
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-title{
+  text-align: center;
+  
+
+}
+
+.hero-button{
+  text-align: center;
+}
+}
+
 @media (min-width: 320px){
+  
 
   .hero-title{
     text-align: center;
-
+   
   }
 
   .hero-button{
@@ -1173,7 +1198,11 @@ label{
   .footer-change{
     flex-direction: column;
     gap: 60px;
-  }
+    display: flex;
+    flex-wrap: wrap;
+     
+    }
+  
  
 .footer-web{
   margin-left: 102px;
@@ -1223,10 +1252,8 @@ label{
   border: 0px, 0px, 1px, 0px;
   background-color: #E7E9FC,#FFFFFF ;
   box-shadow: 1px 1px 6px 0px;
-  position: sticky;
   top: 0;
   width: 100%;
 
 }
 }
-
