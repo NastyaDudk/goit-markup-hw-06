@@ -1,5 +1,4 @@
 .current::after {
-  box-sizing: border-box;
   content: '';
   position: absolute; 
   left: 0; 
@@ -61,8 +60,8 @@ body {
 }
 
     .header-container{
+      display: flex;
       height: 72px;
-      display: flex; 
       align-items: center;
     }
 
@@ -72,7 +71,6 @@ body {
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       color: #404bbf; 
       list-style-type: none;
-      padding: 24px 0 ;
     
     }
 
@@ -81,18 +79,6 @@ body {
     align-items:center; 
   }
 
-  .menu-nav{
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 16px;
-    color: #2E2F42;
-    gap:40px;
-    display:flex;
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-    
-  }
    
   .menu-nav :hover{
     color:#404bbf;
@@ -145,7 +131,7 @@ body {
 
   .address{
     font-style: normal;
-    margin-left: auto;
+    /* margin-left: auto; */
   } 
 
 
@@ -175,7 +161,8 @@ body {
     letter-spacing: 0.02em;
      color:#2E2F42;
      display: flex;
-     gap: 40px;
+     flex-wrap: wrap;
+   
      
       
   }
@@ -736,7 +723,6 @@ fill: #4D5AE5;
 
 
 .subscribe{
-
   gap: 24px;
 
 }
@@ -744,7 +730,7 @@ fill: #4D5AE5;
 
 
 .button-sub{
-  flex-direction: column;
+flex-direction: column;
 min-width: 165px;
 height: 40px;
 justify-content: center;
@@ -1048,9 +1034,27 @@ fill: #4D5AE5;
 }
 
 
+.gamburger{
+  width: 24px;
+  height: 24px;
+  margin: 16px;
+  left: 280px;
+  border: none;
+  background-color: #ffffff;
+  color: black;
+}
+
+
 @media screen and (min-width:320px){
 
+.hero-title{
+  text-align: center;
 }
+
+}
+
+  
+
 @media screen and(max-width:768px){
 
   .add-contacts{ 
@@ -1072,6 +1076,9 @@ fill: #4D5AE5;
   max-width: 768px;
 }
 
+.gamburger{
+  display: none;
+}
 
 .benefit-title{
 width: 288px;
@@ -1111,6 +1118,25 @@ text-align: left;
     width: 736px;
     max-width: 768px;
    
+}
+
+
+
+.gamburger{
+  display: none;
+}
+
+
+.menu-nav{
+  left: 251px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  color: #2E2F42;
+  gap: 40px;
+  display:flex;
+  list-style: none;
+  
 }
 
 
@@ -1245,6 +1271,11 @@ text-align: left;
   padding: 0 15px 0 15px; 
 }
 
+
+
+.gamburger{
+  display: none;
+}
 
   .work-list{
     display:flex;
