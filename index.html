@@ -32,18 +32,6 @@
                 </a>
 
 
-                <div class="modal-header">
-
-                    
-                <button class="gamburger is-open" type="button">
-
-                    <svg class="gamb" width="24" height="24">
-    
-                        <use class="gamburger-icon" href="./images/icons.svg#icon-gamburger">
-                        </use>
-                    </svg>
-                </button>
-
                 <ul class="menu-nav">
 
                     <li class="punkt-header"><a href="./index.html" class="text-header current" style=" color:#404bbf;
@@ -53,25 +41,115 @@
                     <li class="punkt-header"><a href="./index.html" class="text-header">Contacts</a></li>
 
                 </ul>
-          
+
 
             </nav>
             <address class="address">
-                
-                      <span></span>
-                    </label>
+
                 <ul class="add-contacts">
                     <li><a class="ma-tel" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="ma-tel" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
-           
+
             </address>
-        </button>
-    </div>
+
+            <button type="button" class="gamburger-open">
+
+                <svg class="gamb" width="24" height="24">
+
+                    <use class="gamburger-icon" href="./images/icons.svg#icon-gamburger">
+                    </use>
+                </svg>
+            </button>
         </div>
 
+        <div class="container modal-header is-open">
+
+            <button class="close-button" type="button">
+
+                <svg class="close-icon" width="20" height="20">
+
+                    <use href="./images/icons.svg#icon-close-black">
+                    </use>
+                </svg>
+            </button>
 
 
+            <div class="mobile-menu">
+                <ul class="mobile-list">
+
+                <li class="mobile-item">
+                    <a class="mobile-link current-mobile" href="./index.html">Studio</a>
+                </li>
+
+                <li class="mobile-item">
+                    <a class="mobile-link" href>Portfolio</a>
+                </li>
+
+
+                <li class="mobile-item">
+                    <a class="mobile-link" href>Contacts</a>
+                </li>
+                </ul>
+
+                <address class="mobile-address">
+                    <ul class="mobile-menu">
+                        
+                        <li class="mobile-item">
+                            <a class="mobile-link current-item" href="tel:+110001111111">
+                                +11 (000) 111-11-11</a>
+                        </li>
+
+                        <li class="mobile-item-mail">
+                            <a class="mobile-link" href="mailto:info@devstudio.com">
+                                info@devstudio.com</a>
+                        </li>
+
+                    </ul>
+                </address>
+
+                <ul class="mob-list">
+                    <li class="mob-item">
+                        <a class="mob-links" href="https://www.instagram.com/">
+                            <svg class="f-icon-box" width="24" height="24">
+                                <use class="icons" href="./images/icons.svg#icon-instagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="mob-item">
+                        <a class="mob-links" href="https://www.twitter.com/">
+                            <svg class="f-icon-box" width="24" height="24">
+                                <use class="icons" href="./images/icons.svg#icon-twitter">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+
+
+
+                    <li class="mob-item">
+                        <a class="mob-links" href="https://www.facebook.com/">
+                            <svg class="f-icon-box" width="24" height="24">
+                                <use class="icons" href="./images/icons.svg#icon-facebook">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+
+
+                    <li class="mob-item">
+                        <a class="mob-links" href="https://www.linkedin.com/">
+                            <svg class="f-icon-box" width="24" height="24">
+                                <use class="icons" href="./images/icons.svg#icon-linkedin">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
     </header>
 
@@ -191,7 +269,15 @@
 
 
 
-                        <img src="./images/Mark.jpg" alt="Mark Guerrero" width="264" height="260">
+                      
+                        <picture>
+        <source  srcset="./images/img-mark@2x.jpg 2x"
+        media="(min-width:1158px)">
+
+        <img src="./images/Mark.jpg"
+        alt="Mark Guerrero" width="264" height="260">
+                        </picture> 
+      
                         <div class="about-person">
                             <h3 class="person-name">Mark Guerrero</h3>
                             <p class="person-job">Product Designer</p>
@@ -600,7 +686,7 @@
                     <label class="sub-label">
 
                         <input class="input-footer" type="email" name="email" placeholder="E-mail">
-                   
+
                     </label>
 
 
@@ -619,7 +705,7 @@
 
     </footer>
 
-    <div class=" info-container" >
+    <div class=" info-container is-open">
         <div class="info-contacts">
 
             <button class="close-but" type="button">
@@ -638,40 +724,40 @@
             <form name="contacts-form" autocomplete="off">
 
 
-            <div class="form-name">
+                <div class="form-name">
 
-                <label class="form-name-label" for="user-name">Name</label>
+                    <label class="form-name-label" for="user-name">Name</label>
 
-                <div class="form">
+                    <div class="form">
 
-                    <input class="form-input" type="text" name="user-name" id="user-name" required>
+                        <input class="form-input" type="text" name="user-name" id="user-name" required>
 
-                    <svg class="icon-person" width="18" height="24" >
+                        <svg class="icon-person" width="18" height="24">
 
-                        <use href="./images/icons.svg#icon-person">
-                        </use>
-                    </svg>
-               
+                            <use href="./images/icons.svg#icon-person">
+                            </use>
+                        </svg>
+
                     </div>
-               </div>
-   
-          
+                </div>
 
 
-            <div class="form-name">
 
-                <label class="form-name-label" for="user-phone">Phone</label>
 
-                <div class="form">
-                    <input class="form-input" type="text" name="user-phone" id="user-phone" required>
+                <div class="form-name">
 
-                    <svg class="icon-person" width="18" height="24" >
+                    <label class="form-name-label" for="user-phone">Phone</label>
 
-                        <use href="./images/icons.svg#icon-phone">
+                    <div class="form">
+                        <input class="form-input" type="text" name="user-phone" id="user-phone" required>
 
-                        </use>
+                        <svg class="icon-person" width="18" height="24">
 
-                    </svg>
+                            <use href="./images/icons.svg#icon-phone">
+
+                            </use>
+
+                        </svg>
 
                     </div>
 
@@ -687,7 +773,7 @@
 
                         <input class="form-input" type="email" name="user-email" id="user-email" required>
 
-                        <svg class="icon-person" width="18" height="24" >
+                        <svg class="icon-person" width="18" height="24">
 
                             <use href="./images/icons.svg#icon-email">
 
@@ -706,45 +792,45 @@
                         placeholder="Text input"></textarea>
                 </div>
 
-                <div class="checkbox-container" >
+                <div class="checkbox-container">
 
                     <input class="checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy"
                         value="true">
 
 
-                       
 
-                    <label class="checkbox-text" for="user-privacy" >
+
+                    <label class="checkbox-text" for="user-privacy">
                         <span class="checkbox-span">
                             <svg class="checkbox-icon" width="10" height="8" fill="#8E8F99">
-    
+
                                 <use href="./images/icons.svg#icon-Vector">
-    
+
                                 </use>
-    
+
                             </svg>
                         </span>
-                        
+
                         I accept the terms and conditions of the
 
 
-                   
+
 
                         <a class="privacy-policy" href="#">Privacy Policy</a>
 
-                </label>
+                    </label>
 
-          
-                   
+
+
                 </div>
 
                 <button class="form-contacts-button" type="submit">Send</button>
 
-                  </form>
+            </form>
 
-               </div>
-            </div>
+        </div>
+    </div>
 
-    </body>
+</body>
 
 </html>
