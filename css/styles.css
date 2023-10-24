@@ -264,19 +264,24 @@ body {
   /* Main Section 1 */
 
  .hero-section{
-    padding-top: 120px;
-    padding-bottom: 120px;
-    padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
      rgba(46, 47, 66, 0.7)),
      url(../images/peopleoffice.jpg); 
-    max-width: 1440px;
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
    margin: auto;
+   padding-top: 120px;
+   padding-bottom: 120px;
+   padding: 188px 0;
  }
 
+ @media (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url(../images/darkbg1.jpg)
+  }
+}
 
  
  .hero-title{
@@ -418,7 +423,14 @@ body {
     padding-bottom: 96px;
 }
 
- 
+@media (min-resolution: 192dpi) {
+  .team-section {
+    images:320px url(../images/mark@2x.jpg)
+    url(../images/tom@2x.jpg)
+    url(../images/camila@2x.jpg)
+    url(../images/daniel@2x.jpg);
+  }
+}
 
 
 
@@ -529,6 +541,17 @@ cursor: pointer;
     padding-top: 96px;
     padding-bottom: 96px;
   
+}
+
+@media (min-resolution: 192dpi) {
+  .portfolio-section {
+    images:320px url(../images/banking@2x.jpg)
+    url(../images/cashless@2x.jpg)
+    url(../images/meditation@2x.jpg)
+    url(../images/taxi@2x.jpg)
+    url(../images/screen@2x.jpg)
+    url(../images/online@2x.jpg);
+  }
 }
 
 .portfolio{
@@ -1283,6 +1306,8 @@ text-align: left;
 
    @media screen and (min-width:768px){
 
+
+
     .gamburger-open{
       display: none;
     }
@@ -1327,7 +1352,6 @@ text-align: left;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-
 
 
     .work-list{
