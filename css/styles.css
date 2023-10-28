@@ -266,13 +266,15 @@ body {
    margin: auto;
    padding-top: 120px;
    padding-bottom: 120px;
-   padding: 72px 0;
+   padding: 112px 0;
  }
 
  @media (min-resolution: 192dpi) {
   .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)), url(../images/darkbg1.jpg)
+    rgba(46, 47, 66, 0.7)), url(../images/darkbg1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url(../images/Dark-bgx2.jpg);
   }
 }
 
@@ -1339,7 +1341,7 @@ text-align: left;
 
     .ma-tel{
       color: #434455;
-      font-size: 16px;
+      font-size: 12px;
       line-height: 1.5;
       letter-spacing: 0.02em;
       font-style: normal;
@@ -1418,6 +1420,7 @@ text-align: left;
 .hero-section{
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
 }
 
 
