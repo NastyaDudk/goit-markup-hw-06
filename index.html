@@ -14,7 +14,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 
-
+<script src="scripts/script.js" defer></script>
 
 
 </head>
@@ -53,7 +53,9 @@
 
             </address>
 
-            <button type="button" class="gamburger-open">
+
+         
+            <button type="button" class="gamburger-open" id="burger">
 
                 <svg class="gamb" width="24" height="24">
 
@@ -63,9 +65,10 @@
             </button>
         </div>
 
-        <div class="container modal-header is-open">
+        <div class="container modal-header" id="menu">
 
-            <button class="close-but" type="button">
+            <button class="close-but" type="button" 
+            id="closeButton">
 
                 <svg class="close-icon" width="8" height="8">
 
@@ -73,6 +76,10 @@
                     </use>
                 </svg>
             </button>
+
+    
+
+            <nav class="nav-burger">
 
             <ul class="mobile-list">
 
@@ -89,6 +96,7 @@
                     <a class="mobile-link-up" href>Contacts</a>
                 </li>
                 </ul>
+            </nav>
 
                 <address class="mobile-address">
                     <ul class="mobile-menu">
@@ -147,9 +155,6 @@
                     </li>
                 </ul>
                 
-            <div class="mobile-menu">
-                
-            </div>
         </div>
 
     </header>
@@ -787,10 +792,10 @@
 
     </footer>
 
-    <div class=" info-container is-open">
+    <div class=" info-container">
         <div class="info-contacts">
 
-            <button class="close-but" type="button">
+            <button type="button" class="close-but" type="button" >
 
                 <svg class="close-icon" width="8" height="8">
 
@@ -913,6 +918,7 @@
         </div>
     </div>
 
+   
 </body>
 
 </html>
