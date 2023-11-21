@@ -51,6 +51,11 @@ body {
   
 }
 
+.app-image{
+width: 288;
+height: 280;
+}
+
 /* modal-mobile */
 
 
@@ -1171,12 +1176,12 @@ fill: #4D5AE5;
   background-color: transparent;
 }
 
-.is-open{
+/* .is-open{
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
-}
+} */
 
 
 .modal-header{
@@ -1206,6 +1211,8 @@ fill: #4D5AE5;
   .menu-nav{
     display: none;
    }
+
+  
   
    .address{
     display: none;
@@ -1420,6 +1427,11 @@ text-align: left;
   padding: 24px 0;
 }
 
+.app-image{
+  width: 360px;
+  height: 300px;
+}
+
 .hero-section{
   padding-top: 188px;
   padding-bottom: 188px;
@@ -1538,19 +1550,7 @@ letter-spacing: 0.02em;
   margin-bottom: 24px;
   padding: 26px 0;
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 }
-
-
-
 }
-
-
-
-
-
-
-
-
-

@@ -12,15 +12,14 @@ transition: opacity 300ms ease-in-out;
 const closeModal = event => {
     const target = event.target;
 
-    if(target === modalElem || target.closest('.gamburger-open')) {
-    modalElem.style.visibility = 'hidden';
-    modalElem.style.opacity = 0;
+    var span = document.getElementsByClassName("close-but")[0];
+
 
     setTimeout(() => {
         modalElem.style.visibility = 'hidden';
     }, 300)
  }
-}
+
 
 
 
@@ -30,7 +29,8 @@ const openModal = () => {
 }
 
 buttonElem.addEventListener('click', openModal);
-modalElem.addEventListener('click , closeModal');
+modalElem.addEventListener('click', closeModal);
+
 
     
 
