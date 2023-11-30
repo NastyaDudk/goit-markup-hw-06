@@ -35,31 +35,3 @@ $(function () {
     $(".info-container").removeClass("is-open");
   });
 });
-
-// const button = document.querySelector('.hero-button');
-// const modal = document.querySelector('.info-container');
-
-// modal.style.cssText = `;
-// display: flex;
-// visibility: hidden;
-// opacity: 0;
-// transition: opacity 300ms ease-in-out;
-// `;
-
-// const close = event => {
-//     const target = event.target;
-
-//     var span = document.getElementsByClassName("close-but")[0];
-
-//     setTimeout(() => {
-//         modal.style.visibility = 'hidden';
-//     }, 300)
-//  }
-
-// const open = () => {
-//     modal.style.visibility = 'visible';
-//     modal.style.opacity = 1;
-// }
-
-// button.addEventListener('click', open);
-// modal.addEventListener('click', close);
