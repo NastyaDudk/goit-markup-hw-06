@@ -14,7 +14,11 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="scripts/script.js" defer></script>
+
+
 
 
 </head>
@@ -87,12 +91,12 @@
                     </li>
 
                     <li class="mobile-item">
-                        <a class="mobile-link-up" href="#">Portfolio</a>
+                        <a class="mobile-link-up" href="#portfolio">Portfolio</a>
                     </li>
 
 
                     <li class="mobile-item">
-                        <a class="mobile-link-up" href="#">Contacts</a>
+                        <a class="mobile-link-up" href="#contacts">Contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -332,7 +336,8 @@
                     <li class="team-card">
 
 
-                        <img srcset="./images/Tom.jpg 2x" src="./images/Tom.jpg" alt="Tom Ford" width="264" height="260">
+                        <img srcset="./images/Tom.jpg 2x" src="./images/Tom.jpg" alt="Tom Ford" width="264"
+                            height="260">
 
                         <div class="about-person">
                             <h3 class="person-name">Tom Ford</h3>
@@ -391,8 +396,8 @@
                     <li class="team-card">
 
 
-                        <img srcset="./images/camila@2x.jpg 2x" src="./images/Camila.jpg" alt="Camila Garcia" width="264"
-                            height="260">
+                        <img srcset="./images/camila@2x.jpg 2x" src="./images/Camila.jpg" alt="Camila Garcia"
+                            width="264" height="260">
 
 
 
@@ -455,11 +460,11 @@
                     <li class="team-card">
 
 
-                        <img srcset="./images/daniel@2x.jpg 2x" src="./images/Daniel.jpg" alt="Daniel Wilson" width="264"
-                            height="260">
+                        <img srcset="./images/daniel@2x.jpg 2x" src="./images/Daniel.jpg" alt="Daniel Wilson"
+                            width="264" height="260">
 
 
-                        =
+
 
                         <div class="about-person">
                             <h3 class="person-name">Daniel Wilson</h3>
@@ -517,7 +522,7 @@
 
 
 
-        <section class="portfolio-section">
+        <section class="portfolio-section" id="portfolio">
             <div class="container">
                 <h2 class="section-title">Our Portfolio</h2>
 
@@ -687,7 +692,7 @@
 
 
 
-        <div class="container footer-change">
+        <div class="container footer-change" id="contacts">
 
             <div class="f-container">
                 <a class="footer-web" href="./index.html">Web<span class="studio-logo-footer">Studio</span>
@@ -777,10 +782,10 @@
 
 
 
-    <div class=" info-container">
+    <div class=" info-container backdrop">
         <div class="info-contacts">
 
-            <button type="button" class="close-but">
+            <button type="button" class="close-but" id="close-btn">
 
                 <svg class="close-icon" width="8" height="8">
 
